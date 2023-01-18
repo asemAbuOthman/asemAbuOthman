@@ -26,12 +26,12 @@ function init() {
         speech.listening = !speech.listening;
         if (speech.listening) {
           toggle.classList.add('listening');
-          toggle.innerHTML = '<img src="images/mic.png"  class="mic"/>';
+          toggle.innerHTML = '<img src="mic.png"  class="mic"/>';
           speech.recognition.start();
         }
         else {
           toggle.classList.remove('listening');
-          toggle.innerHTML = '<img src="images/mute.png"  class="mic"/>';
+          toggle.innerHTML = '<img src="mute.png"  class="mic"/>';
           speech.recognition.stop();
         }
       })
